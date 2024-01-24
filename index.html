@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanKicks</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-custom navbar-expand-lg ">
+      <div class="container-fluid">
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Footwear</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">New Arrivals</a>
+            </li>
+            <li class="nav-item mx-2 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Brands
+              </a>
+              <ul class="dropdown-menu bg-light">
+                <li><a class="dropdown-item" href="#"> Nike</a></li>
+                <li><a class="dropdown-item" href="#">Puma</a></li>
+                <li><a class="dropdown-item" href="#"> Adidas</a></li>
+                <li><a class="dropdown-item" href="#"> New Balance</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mx-2 dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu bg-light">
+                <li><a class="dropdown-item" href="#">About Us</a></li>
+                <li><a class="dropdown-item" href="#">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div id="login" class="d-flex justify-content-center align-items-center">
+            <i class="fa-regular fa-heart fa-xl" style="color: #000000;"></i>&nbsp;&nbsp;&nbsp;
+            <i class="fa-solid fa-cart-shopping fa-xl" style="color: #000000;"></i>&nbsp;&nbsp;&nbsp;
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <div class="container-fluid">
+      <div class="row">
+        <div id="hero_bg" class="col-lg-8 col-md-12">
+
+          <img src="images/banner_image.png" alt="">
+          <h1 class="title">URBANKICKS</h1>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="container">
+            <div class="row ">
+              <div id="banner_image" class="col-lg-12 col-md-6 col-sm-6">
+                <a href="">
+                  <img src="images/banner_image.png_2.png" alt="">
+                  <h1 id="bnr2_name">Exclusive Collection</h1>
+                </a>
+              </div>
+              <div id="banner_image_3" class="col-lg-12 col-md-6 col-sm-6">
+                <a href="">
+                  <img src="images/banner_image.png_3.png" alt="">
+                  <h1 id="bnr2_name">Explore Nike Collection</h1>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="deals">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-3">
+          <div class="offr">
+            <h1>Deals</h1>
+            <button>Up To 50% off</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="timer">
+            <p id="end_in">Ending In</p>
+            <p> <span id="hour"></span> Hrs</p>
+            <p id="end_in">:</p>
+            <p> <span id="minute"></span> Mins</p>
+            <p id="end_in">:</p>
+            <p> <span id="second"></span> secs</p>
+          </div>
+        </div>
+        <div id="png_img" class="col-md-3">
+          <div>
+            <img src="images/sneakers_png.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card_carousel pt-5 pb-5">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Heading -->
+        <div class="col-6">
+          <h3 class="mb-3">New Arrivals </h3>
+        </div>
+        <!-- Arrows -->
+        <div class="col-6" id="arrows">
+          <a class="btn btn- mb-3 " href="#carouselExampleAutoplaying" role="button" data-bs-slide="prev">
+            <i class="fa-solid fa-arrow-left fa-xl" style="color: #000000;"></i> </a>
+          <a class="btn btn- mb-3 " href="#carouselExampleAutoplaying" role="button" data-bs-slide="next">
+            <i class="fa-solid fa-arrow-right fa-xl" style="color: #000000;"></i> </a>
+        </div>
+        <!-- Cards(shoes) -->
+        <div class="col-12">
+          <div id="carouselExampleAutoplaying" class="carousel  slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div id="cards-wrapper" class="row">
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="images/sneakers/AIR JORDAN 1 RETRO HIGH OG.webp">
+                      <div class="card-body">
+                        <p class="card-text">Nike</p>
+                        <h5 class="card-title">AIR JORDAN 1 RETRO HIGH OG 'BLACK/...'</h5>
+                        <p>₹ 16,995.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    
+                    
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="images/sneakers/BLKTOP RIDER PRM.webp">
+                      <div class="card-body">
+                        <p class="card-text">Puma</p>
+                        <h5 class="card-title">BLKTOP RIDER PRM 'ASH GREY/MALACHITE'</h5>
+                        <p>₹ 6,299.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="images/sneakers/SLIPSTREAM LO XTREME.webp">
+                      <div class="card-body">
+                        <p class="card-text">Puma</p>
+                        <h5 class="card-title">SLIPSTREAM LO XTREME 'WHITE/YELLOW/BLUE'</h5>
+                        <p>₹ 8,399.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div id="cards-wrapper" class="row">
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="images/sneakers/BYW SELECT.webp">
+                      <div class="card-body">
+                        <p class="card-text">Adidas</p>
+                        <h5 class="card-title">BYW SELECT 'ECRU TINT/BLUE'</h5>
+                        <p>₹ 9,799.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="images/sneakers/NMD_R1 V3.webp">
+                      <div class="card-body">
+                        <p class="card-text">Adidas</p>
+                        <h5 class="card-title">NMD_R1 V3 'HALO SILVER/OFF WHITE'</h5>
+                        <p>₹ 11,199.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="images/sneakers/2002R.webp">
+                      <div class="card-body">
+                        <p class="card-text">New Balance</p>
+                        <h5 class="card-title">2002R 'LIGHT CREAM PURPLE'</h5>
+                        <p>₹ 15,399.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="images/sneakers/992.webp">
+                      <div class="card-body">
+                        <p class="card-text">New Balance</p>
+                        <h5 class="card-title">992 'GREY/BLUE-RED'</h5>
+                        <p>₹ 24,499.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands">
+    <div class="container-fluid">
+      <h1>Shop By Brand</h1>
+      <div class="row">
+        <div id="img-1" class="col-md-3">
+          <img src="images/brand-1.png" alt="">
+          <button id="brand_1">Adidas</button>
+        </div>
+        <div id="img-1" class="col-md-3">
+          <img src="images/brand-2.png" alt="">
+          <button id="brand_1">New Balance</button>
+        </div>
+        <div id="img-1" class="col-md-3">
+          <img src="images/brand-3.png" alt="">
+          <button id="brand_1">Nike</button>
+        </div>
+        <div id="img-1" class="col-md-3">
+          <img src="images/brand-4.png" alt="">
+          <button id="brand_1">Puma</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card_carousel pt-5 pb-5">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Heading -->
+        <div class="col-6">
+          <h3 class="mb-3">We Recommend </h3>
+        </div>
+        <!-- Arrows -->
+        <div class="col-6" id="arrows">
+          <a class="btn btn- mb-3 " href="#carouselExampleAutoplaying" role="button" data-bs-slide="prev">
+            <i class="fa-solid fa-arrow-left fa-xl" style="color: #000000;"></i> </a>
+          <a class="btn btn- mb-3 " href="#carouselExampleAutoplaying" role="button" data-bs-slide="next">
+            <i class="fa-solid fa-arrow-right fa-xl" style="color: #000000;"></i> </a>
+        </div>
+        <!-- Cards(shoes) -->
+        <div class="col-12">
+          <div id="carouselExampleAutoplaying" class="carousel  slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div id="cards-wrapper" class="row">
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="images/sneakers/AIR JORDAN 1 RETRO HIGH OG.webp">
+                      <div class="card-body">
+                        <p class="card-text">Nike</p>
+                        <h5 class="card-title">AIR JORDAN 1 RETRO HIGH OG 'BLACK/...'</h5>
+                        <p>₹ 16,995.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="images/sneakers/AIR JORDAN 1 LOW SE.webp">
+                      <div class="card-body">
+                        <p class="card-text">Nike</p>
+                        <h5 class="card-title">AIR JORDAN 1 LOW SE 'WHITE/DUNE ...'</h5>
+                        <p>₹ 10,295.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="images/sneakers/BLKTOP RIDER PRM.webp">
+                      <div class="card-body">
+                        <p class="card-text">Puma</p>
+                        <h5 class="card-title">BLKTOP RIDER PRM 'ASH GREY/MALACHITE'</h5>
+                        <p>₹ 6,299.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="images/sneakers/SLIPSTREAM LO XTREME.webp">
+                      <div class="card-body">
+                        <p class="card-text">Puma</p>
+                        <h5 class="card-title">SLIPSTREAM LO XTREME 'WHITE/YELLOW/BLUE'</h5>
+                        <p>₹ 8,399.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div id="cards-wrapper" class="row">
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="images/sneakers/BYW SELECT.webp">
+                      <div class="card-body">
+                        <p class="card-text">Adidas</p>
+                        <h5 class="card-title">BYW SELECT 'ECRU TINT/BLUE'</h5>
+                        <p>₹ 9,799.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="images/sneakers/NMD_R1 V3.webp">
+                      <div class="card-body">
+                        <p class="card-text">Adidas</p>
+                        <h5 class="card-title">NMD_R1 V3 'HALO SILVER/OFF WHITE'</h5>
+                        <p>₹ 11,199.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="images/sneakers/2002R.webp">
+                      <div class="card-body">
+                        <p class="card-text">New Balance</p>
+                        <h5 class="card-title">2002R 'LIGHT CREAM PURPLE'</h5>
+                        <p>₹ 15,399.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <div class="card">
+                      <img class="img-fluid" alt="100%x280" src="images/sneakers/992.webp">
+                      <div class="card-body">
+                        <p class="card-text">New Balance</p>
+                        <h5 class="card-title">992 'GREY/BLUE-RED'</h5>
+                        <p>₹ 24,499.00</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="shoe_care">
+    <div class="container-fluid">
+      <h1>Sneaker Care</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <img class="img-fluid" alt="100%x280" src="images/snaker_liquid.webp">
+                <div class="card-body">
+                  <p class="card-text">Sneaker Lab</p>
+                  <h5 class="card-title">Sneaker Protector</h5>
+                  <p>₹ 769.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <img class="img-fluid" alt="100%x280" src="images/basic_kit.webp">
+                <div class="card-body">
+                  <p class="card-text">Sneaker Lab</p>
+                  <h5 class="card-title">Basic Kit Clean-Care-Protect</h5>
+                  <p>₹ 1,149.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <img class="img-fluid" alt="100%x280" src="images/Leather_wipes.jpg">
+                <div class="card-body">
+                  <p class="card-text">Sneaker Lab</p>
+                  <h5 class="card-title">Leather Wipes</h5>
+                  <p>₹ 1,149.00</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card">
+                <img class="img-fluid" alt="100%x280" src="images/sneaker_wipes.webp">
+                <div class="card-body">
+                  <p class="card-text">Sneaker Lab</p>
+                  <h5 class="card-title">Sneaker Wipes</h5>
+                  <p>₹ 1,149.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="shoe_care_all" class="col-md-6">
+          <img src="images/Untitled_design_15.webp" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="boxes">
+    <div class="container-fluid">
+      <div class="row">
+        <div id="shoe_box" class="col-md-6">
+          <img src="images/shoes.png" alt="">
+          <p id="shoe_name">SHOES</p>
+        </div>
+        <div id="shoe_box" class="col-md-6">
+          <img src="images/socks.jpg.png" alt="">
+          <p id="shoe_name">ACCESSORIES</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="review">
+    <div class="container-fluid">
+      <h1>Our Happy Customers</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="dtls">
+                <img src="images/rwv_img_1.png" alt="">
+                <p>Alex cary</p>
+                <div>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                  <i class="fa-regular fa-star fa-xl" style="color: #ffd700;"></i>
+                </div>
+              </div>
+              <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In inventore soluta et atque expedita laboriosam eveniet assumenda ipsa? Nesciunt dolore soluta reprehenderit voluptate voluptatibus provident quos nostrum vero quidem ex!         
+                   </div>
+                   <p>
+                    Sep 03,2023
+                  </p>
+              </div>
+              
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="dtls">
+                <img src="images/rwv_img_2.png" alt="">
+                <p>Alex cary</p>
+                <div>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                  <i class="fa-regular fa-star fa-xl" style="color: #ffd700;"></i>
+                </div>
+              </div>
+              <div>
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. In inventore soluta et atque expedita laboriosam eveniet assumenda ipsa? Nesciunt dolore soluta reprehenderit voluptate voluptatibus provident quos nostrum vero quidem ex!           
+   </div>
+   <p>
+    Jan 01,2024
+  </p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="dtls">
+                <img src="images/rwv_img_3.png" alt="">
+                <p>Alex cary</p>
+                <div>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                  <i class="fa-solid fa-star fa-xl" style="color: #ffd700;"></i>
+                  <i class="fa-regular fa-star fa-xl" style="color: #ffd700;"></i>
+                </div>
+              </div>
+              <div>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In inventore soluta et atque expedita laboriosam eveniet assumenda ipsa? Nesciunt dolore soluta reprehenderit voluptate voluptatibus provident quos nostrum vero quidem ex!       
+                     </div>
+                     <p>
+                      Dec 07,2023
+                    </p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="images/logo.png" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum blanditiis ratione.</p>
+        </div>
+        <div id="ftr_head" class="col-md-3">
+          <h1>INFO</h1>
+          <p id="underscore">________</p>
+          <p>About Us</p>
+          <p>Contact Us</p>
+          <p>Privacy Policy</p>
+
+        </div>
+        <div id="ftr_head" class="col-md-3">
+          <h1>Online Shop</h1>
+          <p id="underscore">____________________</p>
+          <p>Brands</p>
+          <p>shoes</p>
+          <p>Accessories</p>
+        </div>
+        <div id="ftr_head" class="col-md-3">
+          <h1>Follow Us</h1>
+          <p id="underscore">________________</p>
+          <div class="icons">
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff;"></i>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright ©2024; Designed By <span id="author">Rakesh Billy</span></p>
+    </div>
+  </footer>
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
