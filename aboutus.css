@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+}
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+    margin-top: 50px;
+}
+
+.hero h1{
+    text-align: center;
+    font-weight: 600;
+}
+
+.hero h2{
+    text-align: center;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.hero .row{
+    margin-top: 40px;
+}
+
+.hero #image{
+    background-image: url(images/aboutus.jpg);
+    background-size: cover;
+    background-position: center;
+    /* height: 50vh; */
+    border-radius: 10px;
+}
+
+.hero #data{
+    padding: 0px 30px;
+    text-align: justify;
+}
+
+.hero #data button{
+    padding: 10px 20px;
+    border: 2px solid rgb(252, 150, 41);
+    background-color: transparent;
+    border-radius: 10px;
+    color: rgb(252, 150, 41);
+}
+
+.choose_us{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.choose_us h1{
+    text-align: center;
+    font-weight: 600;
+}
+
+.choose_us h2{
+    text-align: center;
+    font-weight: 550;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.choose_us .col-md-6{
+    /* background-color: aliceblue; */
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    
+}
+
+.choose_us .box{
+    background-color: aliceblue;
+    padding: 15px;
+    padding-top: 50px;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid  rgb(252, 150, 41);
+}
+
+.choose_us .box img{
+    height: 70px;
+    width: 70px;
+}
+
+.choose_us #icon{
+    position: absolute;
+    top:-30px ;
+    left: 40px;
+    border: 1px solid  rgb(252, 150, 41);
+    border-radius: 10px;
+    /* border-top: ; */
+}
+
+.choose_us #header{
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+
+
+/* Review */
+
+.review {
+    margin-top: 100px;
+    margin-bottom: 50px;
+   
+  }
+
+  .review h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    margin-bottom: 60px;
+  }
+
+  .review .card {
+    border: none;
+    margin-top: 20px;
+  }
+
+  .review .card-body {
+    /* background-image: url(./images/black_bg.jpg); */
+    /* background-color: ; */
+    background-size: cover;
+    color:  black;
+    border: 2px solid  rgb(252, 150, 41);
+    border-radius: 10px;
+    /* border: none; */
+  }
+  
+  .review img {
+    height: 50px;
+    width: 50px;
+  }
+  
+  .dtls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .dtls p {
+    font-size: 20px;
+    font-weight: 600;
+  }

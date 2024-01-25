@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+}
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+img{
+    width: 100%;
+}
+
+.Product .col-md-8 .col-md-6, .col-md-4{
+    margin-top: 20px;
+}
+
+#shoe_details #brand{
+    font-weight: 600;
+}
+
+.sizes{
+    display: flex;
+    justify-content: space-between;
+}
+
+#size_chrt{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#shoe_details h1{
+    font-size: 30px;
+    font-weight: 600;
+letter-spacing: 1px;}
+
+.size_btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.size_btns button{
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.size_btns button:hover{
+    color: white;
+    padding: 10px 20px;
+    background-color: black;
+    border: 1px solid black;
+}
+.crt_btn{
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px 0px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.abt_prdt{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+
+}
+
+.clps{
+    text-decoration: none;
+    color: black;
+   
+}
+
+.collapse .card{
+    border: none;
+    text-align: justify;
+}
+
+.additional{
+    margin-top: 100px;
+}
+
+.additional h1{
+    /* font-size: 30px; */
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* modal */
+
+.modal-body{
+    padding: 30px 50px;
+}
+
+.modal-body h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-body .cntry{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 0px 10px;
+    padding-top: 10px;
+
+
+}
+
+.size_measure{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    padding-top: 10px;
+
+
+}
+.size_measure p{
+
+}
+
+.size_measure_x{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(232, 232, 232);
+    color: rgb(0, 0, 0);
+    padding: 0px 10px;
+    padding-top: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}

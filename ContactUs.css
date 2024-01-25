@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+}
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(245, 245, 245);
+}
+
+.contact_us{
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.contact_form{
+    margin-bottom: 50px;
+}
+.contact_form .row{
+    box-shadow: 1px 1px 10px black;
+
+}
+i{
+    background-color: rgb(252, 150, 41);
+    padding: 30px 21px;
+    border-radius: 50%;
+    /* margin-left: 30%; */
+    margin-bottom: 20px;
+
+}
+
+i:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px black;
+
+}
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 1px 1px 5px black;
+
+}
+
+.col-md-3{
+    /* border: 1px solid black; */
+    text-align: center;
+    /* text-align: justify; */
+    
+}
+
+#heading{
+    font-weight: 600;
+}
+
+#details{
+color: rgb(255, 162, 63);
+}
+
+#form{
+    border: 1px solid black;
+    border: none;
+    background-color: white;
+}
+
+#image{
+    border: 1px solid black;
+    background-image: url(./images/3d-shoe-fire-with-flames.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+form{
+    padding: 20px;
+}
+
+form h1{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+#name_phn{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+label{
+    font-weight: 600;
+}
+
+input, textarea{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    outline: none;
+    /* background-color: rgb(227, 226, 225) ; */
+}
+
+button{
+    color: white;
+    background-color: rgb(252, 150, 41);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+img{
+    /* width: 100%; */
+}
