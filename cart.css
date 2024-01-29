@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+}
+body {
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+a{
+  color: unset;
+  text-decoration: none;
+}
+
+svg{
+    width: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0px 40px;
+}
+
+.icon-cart{
+    position: relative;
+    /* margin-right: 40px; */
+}
+.icon-cart span{
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+}
+
+.cart{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.products{
+    height: 50vh;
+    background-color: bisque;
+}
+
+.cart_item{
+    height: 100vh;
+    width: 30vw;
+    position: fixed;
+    right: 0;
+    margin: 10px;
+    background-color: rgb(205, 140, 62);
+}
+
+.cart_item h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 600;
+}
+.cart_item .btn{
+    display: grid;
+    grid-template-columns:  1fr;
+    margin: 0px 10px;
+}
+.cart_item button{
+    background-color: #E8BC0E;
+    border: none;
+    font-size: 1rem;
+    font-weight: 550;
+    cursor: pointer;
+    padding: 20px 0px;
+}

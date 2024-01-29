@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Shop</title>
+    <style>
+        /* Add some basic styling for better presentation */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #cartLink {
+            margin-left: 10px;
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue;
+        }
+
+        #cart {
+            margin-top: 20px;
+        }
+
+        /* Style for cart item links */
+        .cartItemLink {
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .cartItemLink:hover {
+            text-decoration: underline;
+        }
+
+        .quantityControl {
+            display: inline-block;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        #emptyCartMessage {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sneaker Product Page</h1>
+
+    <!-- Header with Cart Link -->
+    <div id="header">
+        <span id="cartLink" onclick="goToCartPage()"><a href="cart.html">Cart</a></span>
+    </div>
+
+    <label for="size">Select Size:</label>
+    <select id="size" name="size">
+        <option value="7">Size 7</option>
+        <option value="8">Size 8</option>
+        <option value="9">Size 9</option>
+        <!-- Add more size options as needed -->
+    </select>
+
+    <button onclick="addToCart()">Add to Cart</button>
+
+    
+
+<script src="cart.js"></script>
+
+</body>
+</html>

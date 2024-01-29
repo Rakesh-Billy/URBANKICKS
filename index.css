@@ -7,6 +7,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+a{
+  color: unset;
+  text-decoration: none;
+}
+
 /* Navbar */
 
 .navbar input {

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker Shop</title>
+    <style>
+        /* Add some basic styling for better presentation */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #cartLink {
+            margin-left: 10px;
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sneaker Product Page</h1>
+
+    <!-- Header with Cart Link -->
+    <div id="header">
+        <span id="cartLink" onclick="goToCartPage()">Cart</span>
+    </div>
+
+    <label for="size">Select Size:</label>
+    <select id="size" name="size">
+        <option value="7">Size 7</option>
+        <option value="8">Size 8</option>
+        <option value="9">Size 9</option>
+        <!-- Add more size options as needed -->
+    </select>
+
+    <button onclick="addToCart()">Add to Cart</button>
+
+    <!-- Display cart content here -->
+    <div id="cartContent"></div>
+
+    <script>
+        function addToCart() {
+            var selectedSize = document.getElementById("size").value;
+
+            if (selectedSize !== "") {
+                // Assuming you have a function to add the item to the cart
+                addItemToCart(selectedSize);
+
+                // Display the updated cart content
+                displayCart();
+            } else {
+                alert("Please select a size before adding to cart.");
+            }
+        }
+
+        function displayCart() {
+            // Assuming you have a function to get the cart content
+            var cartContent = getCartContent();
+
+            // Display the cart content in the designated div
+            document.getElementById("cartContent").innerHTML = cartContent;
+        }
+
+        function goToCartPage() {
+            // Navigate to the cart page
+            window.location.href = "prac_cart-2.html";
+        }
+    </script>
+
+</body>
+</html>

@@ -8,6 +8,35 @@ body {
   text-decoration: none
 }
 
+svg{
+  width: 30px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0px 40px;
+}
+
+.icon-cart{
+  position: relative;
+  /* margin-right: 40px; */
+}
+.icon-cart span{
+  position: absolute;
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  top: 50%;
+  right: -20px;
+}
+
 .all_ftwr{
     margin: 30px 20px;
 }
@@ -50,6 +79,7 @@ body {
 .all_ftwr .card-title {
   font-size: 20px;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .all_ftwr .card-text {
@@ -60,10 +90,21 @@ body {
 .all_ftwr .price {
   font-size: 15px;
   font-weight: 600;
+  text-decoration: none;
+
 }
 
 .all_ftwr h3 {
   color: black;
   font-size: 40px;
   font-weight: 600;
+}
+
+.card-title{
+  text-decoration: none;
+}
+
+a{
+  color: unset;
+  text-decoration: none;
 }

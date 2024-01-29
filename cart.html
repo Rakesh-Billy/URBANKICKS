@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add some basic styling for better presentation */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        label {
+            margin-right: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #cartLink {
+            margin-left: 10px;
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue;
+        }
+
+        #cart {
+            margin-top: 20px;
+        }
+
+        /* Style for cart item links */
+        .cartItemLink {
+            cursor: pointer;
+            text-decoration: none;
+            color: black;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .cartItemLink:hover {
+            text-decoration: underline;
+        }
+
+        .quantityControl {
+            display: inline-block;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        #emptyCartMessage {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <div id="emptyCartMessage"></div>
+            <ul id="cartItems"></ul>
+        </div>
+
+
+    <script src="cart.js"></script>
+</body>
+</html>
