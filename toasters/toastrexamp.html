@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Toaster Message Example</title>
+
+  <style>
+ body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+button {
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.toaster {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.success {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.error {
+  background-color: #FF5252;
+  color: #fff;
+}
+
+.warning {
+  background-color: #FFD600;
+  color: #333;
+}
+
+
+  </style>
+  <link rel="stylesheet" href="butterup.min.css" />
+  <script src="butterup.min.js"></script>
+</head>
+<body>
+
+    <button id="showSuccessToasterButton">Show Success Toaster</button>
+    <button id="showErrorToasterButton">Show Error Toaster</button>
+    <button id="showWarningToasterButton">Show Warning Toaster</button>
+    
+    <div class="toaster" id="toaster">
+      <span class="toaster-message" id="toasterMessage"></span>
+    </div>
+
+<script >
+document.getElementById('showSuccessToasterButton').addEventListener('click', function() {
+  showToaster('Success Toaster', 'success');
+});
+
+document.getElementById('showErrorToasterButton').addEventListener('click', function() {
+  showToaster('Error Toaster', 'error');
+});
+
+document.getElementById('showWarningToasterButton').addEventListener('click', function() {
+  showToaster('Warning Toaster', 'warning');
+});
+
+function showToaster(message, type) {
+  var toaster = document.getElementById('toaster');
+  var toasterMessage = document.getElementById('toasterMessage');
+
+  toasterMessage.textContent = message;
+  toaster.className = 'toaster ' + type;
+  toaster.style.display = 'block';
+
+  setTimeout(function() {
+    toaster.style.display = 'none';
+  }, 3000); // Hide the toaster after 3 seconds (adjust as needed)
+}
+
+</script>
+</body>
+</html>

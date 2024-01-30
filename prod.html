@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,14 +58,18 @@
         }
     </style>
 </head>
+
 <body>
+
 
     <h1>Sneaker Product Page</h1>
 
-    <!-- Header with Cart Link -->
-    <div id="header">
-        <span id="cartLink" onclick="goToCartPage()"><a href="cart.html">Cart</a></span>
-    </div>
+<!-- Header with Cart Link -->
+<div id="header">
+    <span id="cartLink" onclick="goToCartPage()">Cart</span> <span id="cartItemCount">0</span>
+
+</div>
+
 
     <label for="size">Select Size:</label>
     <select id="size" name="size">
@@ -76,9 +81,9 @@
 
     <button onclick="addToCart()">Add to Cart</button>
 
-    
 
-<script src="cart.js"></script>
+    <script src="cart.js"></script>
 
 </body>
+
 </html>

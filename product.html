@@ -13,231 +13,107 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js">
+
     <link rel="stylesheet" href="product.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="title">PRODUCT LIST</div>
-        <div class="icon-cart">
-            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
-            </svg>
-            <span>0</span>
-        </div>
-    </header>
+
     <div class="listProduct">
 
-    <section class="Product">
-        <div class="container">
-            <div class="row detail ">
-                <div class="col-md-8">
-                    <div class="image">
-                        <img src="">
-                    </div>
-                </div>
-                <div id="shoe_details" class="col-md-4 sh ">
-                    <form action="">
-                        <p class="brand"></p>
-                        <h1 class="Shoe_name"></h1>
-                        <p class="shoe_price"></p>
-                        <div class="sizes">
-                            <p>Shoe Size (UK)</p>
-                            <p id="size_chrt" data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                    class="fa-solid fa-ruler fa-lg" style="color: #000000;"></i>Size Chart</p>
+        <section class="Product">
+            <div class="container">
+                <div class="row detail ">
+                    <div class="col-md-8">
+                        <div class="image">
+                            <img src="">
                         </div>
+                    </div>
+                    <div id="shoe_details" class="col-md-4 sh ">
+                        <form action="">
+                            <p class="brand"></p>
+                            <h1 class="Shoe_name"></h1>
+                            <p class="shoe_price"></p>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Size Chart</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div>
-                                            <h1>Size Chart for Shoes</h1>
-                                            <div class="cntry">
-                                                <p>UK</p>
-                                                <p>Euro</p>
-                                                <p>US</p>
-                                            </div>
-                                            <div class="size_measure">
-                                                <p>7</p>
-                                                <p>41</p>
-                                                <p>8</p>
-                                            </div>
-                                            <div class="size_measure_x">
-                                                <p>8</p>
-                                                <p>42.5</p>
-                                                <p>9</p>
-                                            </div>
-                                            <div class="size_measure">
-                                                <p>9</p>
-                                                <p>44</p>
-                                                <p>10</p>
-                                            </div>
-                                            <div class="size_measure_x">
-                                                <p>10</p>
-                                                <p>45</p>
-                                                <p>11</p>
-                                            </div>
-                                            <div class="size_measure">
-                                                <p>11</p>
-                                                <p>46</p>
-                                                <p>12</p>
-                                            </div>
-                                            <div class="size_measure_x">
-                                                <p>12</p>
-                                                <p>47.5</p>
-                                                <p>13</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="size_row">
 
-                                </div>
+                            </div>
+
+
+
+                            <div class="add_crt_btn">
+                                <button class="crt_btn" id="addToCartBtn" onclick="addToCart(event)">Add to
+                                    Cart</button>
+                            </div>
+                            <a href="cart.html">cart</a>
+
+                        </form>
+
+                        <br>
+                        <br>
+                        <p class="d-inline-flex gap-1">
+                        <div class="abt_prdt">
+                            <p>About Product</p>
+
+                            <a class="clps" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                +
+                            </a>
+                        </div>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                Recognizing the Dunk's roots as the top-ranking college team sneaker, the "Be True To
+                                Your
+                                School" pack looks to the original ad campaign for inspiration. Colors represent
+                                top-flight
+                                universities, while crisp leather has the perfect amount of sheen to make 'em a
+                                hands-down
+                                win. So lace up and show off that varsity spirit. Ya game?
+                                <br>
+                                <br>
+                                Colors let you rep your favorite collegiate teams.
+                                Leather upper ages to soft perfection.
+                                Foam midsole offers lightweight, responsive cushioning.
+                                <br>
+                                <br>
+                                Padded, low-cut collar looks sleek and feels great.
+                                Rubber outsole with classic hoops pivot circle adds durable traction and heritage style.
                             </div>
                         </div>
-
-                        <div class="size_btns">
-                            <button>7</button>
-                            <button>8</button>
-                            <button>9</button>
-                            <button>10</button>
-                            <button>11</button>
-                            <button>12</button>
-                        </div>
-
-                        <div class="add_crt_btn">
-                            <button class="crt_btn">Add to Cart</button>
-                        </div>
-
-                    </form>
-
-                    <br>
-                    <br>
-                    <p class="d-inline-flex gap-1">
-                    <div class="abt_prdt">
-                        <p>About Product</p>
-
-                        <a class="clps" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false"
-                            aria-controls="collapseExample">
-                            +
-                        </a>
-                    </div>
-                    </p>
-                    <div class="collapse" id="collapseExample">
-                        <div class="card card-body">
-                            Recognizing the Dunk's roots as the top-ranking college team sneaker, the "Be True To Your
-                            School" pack looks to the original ad campaign for inspiration. Colors represent top-flight
-                            universities, while crisp leather has the perfect amount of sheen to make 'em a hands-down
-                            win. So lace up and show off that varsity spirit. Ya game?
-                            <br>
-                            <br>
-                            Colors let you rep your favorite collegiate teams.
-                            Leather upper ages to soft perfection.
-                            Foam midsole offers lightweight, responsive cushioning.
-                            <br>
-                            <br>
-                            Padded, low-cut collar looks sleek and feels great.
-                            Rubber outsole with classic hoops pivot circle adds durable traction and heritage style.
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="additional">
-        <div class="container">
-            <h1>You may also like </h1>
-            <div class="row other_products ">
+        <section>
+            <div class="icon-cart">
+                <span id="cartCount">0</span>
+            </div>
+            <div class="cart">
+                <h2>Your Cart <span id="totalItemsCount">0</span></h2>
+                <ul id="cartItems"></ul>
+                <button onclick="clearCart()">Clear Cart</button>
+                <span>Total Price: $<span id="totalPrice"></span></span>
+
 
             </div>
-        </div>
-    </section>
+        </section>
 
+        <section class="additional">
+            <div class="container">
+                <h1>You may also like </h1>
+                <div class="row other_products ">
 
-    <script>
-let products = null;
-
-// get data from JSON file
-fetch('products.json')
-    .then(response => response.json())
-    .then(data => {
-        products = data;
-        showDetail();
-    })
-
-function showDetail() {
-    // remove default data from HTML
-    let detail = document.querySelector('.detail');
-    let listProduct = document.querySelector('.other_products');
-    let productId = new URLSearchParams(window.location.search).get('id');
-    let thisProduct = products.find(product => product.id == productId);
-
-
-    // if there is no product with id = productId => return to home page
-    if (!thisProduct) {
-        window.location.href = "/";
-    }
-
-    // Show details for the selected product
-    detail.querySelector('.image img').src = thisProduct.image;
-    detail.querySelector('.brand').innerText = thisProduct.brand;
-    detail.querySelector('.Shoe_name').innerText = thisProduct.name;
-    detail.querySelector('.shoe_price').innerText = thisProduct.price;
-
-    // Get a random sample of 4 products (excluding the selected one)
-    const randomProducts = getRandomProducts(products, 4, productId);
-
-    randomProducts.forEach(product => {
-        let newProduct = document.createElement('a');
-        newProduct.href = '/product.html?id=' + product.id;
-        newProduct.classList.add('col-lg-3', 'col-md-4');
-        newProduct.innerHTML =
-            ` <div class="card">
-                <img class="img-fluid" alt="100%x280" src="${product.image}">
-                <div class="card-body">
-                  <p class="card-text">${product.brand}</p>
-                  <h5 class="card-title">${product.name}</h5>
-                  <p>${product.price}</p>
                 </div>
-              </div>`;
+            </div>
+        </section>
 
-        listProduct.appendChild(newProduct);
-    });
-}
+    </div>
 
-// generate random you may like products
-
-function getRandomProducts(products, count, excludedProductId) {
-    // Shuffle the products array
-    const shuffledProducts = shuffleArray(products);
-
-    // Filter out the excluded product
-    const filteredProducts = shuffledProducts.filter(product => product.id !== excludedProductId);
-
-    // Take the first 'count' products
-    return filteredProducts.slice(0, count);
-}
-
-function shuffleArray(array) {
-    // Fisher-Yates shuffle algorithm
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-}
-
-
-    </script>
-    <script src="cart.js"></script>
+<script src="cart.js"></script>
 
 
 </body>

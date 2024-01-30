@@ -7,75 +7,44 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-a{
-  color: unset;
-  text-decoration: none;
+.container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    
 }
 
-svg{
-    width: 30px;
+.items, .cart_amount{
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+
 }
-header{
+
+.cart_heading {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-    margin: 0px 40px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
 }
 
-.icon-cart{
-    position: relative;
-    /* margin-right: 40px; */
-}
-.icon-cart span{
-    position: absolute;
-    background-color: red;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color: #fff;
-    top: 50%;
-    right: -20px;
-}
-
-.cart{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-}
-
-.products{
-    height: 50vh;
-    background-color: bisque;
-}
-
-.cart_item{
-    height: 100vh;
-    width: 30vw;
-    position: fixed;
-    right: 0;
-    margin: 10px;
-    background-color: rgb(205, 140, 62);
-}
-
-.cart_item h1{
-    padding: 20px;
-    margin: 0;
+.cart_heading h1{
     font-weight: 600;
+    font-size: 30px;
 }
-.cart_item .btn{
-    display: grid;
-    grid-template-columns:  1fr;
-    margin: 0px 10px;
-}
-.cart_item button{
-    background-color: #E8BC0E;
+
+.cart_heading button{
+    background-color: rgb(252, 36, 36);
+    color: white;
     border: none;
-    font-size: 1rem;
-    font-weight: 550;
-    cursor: pointer;
-    padding: 20px 0px;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.abcd{
+    display: flex;
+    justify-content: space-between;
 }

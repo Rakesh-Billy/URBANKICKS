@@ -63,7 +63,8 @@
 
     <!-- Header with Cart Link -->
     <div id="header">
-        <span id="cartLink" onclick="goToCartPage()">Cart</span>
+        <span id="cartLink" onclick="goToCartPage()">Cart</span> <span id="cartItemCount">0</span>
+
     </div>
 
     <label for="size">Select Size:</label>
@@ -120,8 +121,14 @@
         function displayCartItems() {
             var cartItemsElement = document.getElementById("cartItems");
             var emptyCartMessage = document.getElementById("emptyCartMessage");
-            cartItemsElement.innerHTML = ""; // Clear previous items
+            var cartItemCountElement = document.getElementById("cartItemCount");
+    
+    if (!cartItemsElement || !emptyCartMessage ) {
+        console.error("Required elements not found");
+        return;
+    }
 
+    cartItemsElement.innerHTML = ""; // Clear previous items
             // Display each item in the cart
             cartItems.forEach(function(cartItem) {
                 var listItem = document.createElement("li");
@@ -172,6 +179,14 @@
             } else {
                 emptyCartMessage.textContent = "";
             }
+
+             // Calculate total item count
+    var totalItemCount = cartItems.reduce(function (total, item) {
+        return total + item.count;
+    }, 0);
+
+    // Update the content of the cart link with the total item count
+    cartItemCountElement.textContent = totalItemCount;
         }
 
         function saveCartItems() {
