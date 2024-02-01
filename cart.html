@@ -15,63 +15,37 @@
             <div class="items">
                 <div class="cart_heading">
                     <h1>Your Cart (<span id="totalItemsCount">0</span>)</h1>
-                    <button onclick="clearCart()">Clear Cart</button>
-                </div>
+<p>Price</p>                </div>
                 <div id="cartItems"></div>
+                <div class="additional_btns">
+                    <button onclick="clearCart()">Clear Cart</button>
+                    <p>Subtotal (<span id="totalItemsCount">0</span> items ): ₹<span id="totalPrice"></span></p>
+
+                </div>
 
 
             </div>
             <div class="cart_amount">
-                <p>Subtotal (<span id="totalItemsCount">0</span> items ): $<span id="totalPrice"></span></p>
-                <label for="coupon">Do you have a Coupon ?</label>
-                <input type="text" placeholder="Enter your Coupon Code">
-                <br>
+                <p>Subtotal (<span id="totalItemsCount">0</span> items ): ₹<span id="totalPrice"></span></p>
+                <label for="couponCode">Do you have a Coupon ?</label>
+                <input type="text" id="couponCode" placeholder="Enter your Coupon Code">
+
+                <button onclick="applyCoupon()">Apply Coupon</button>
+                <div class="dscnt_msg">
+                    
+
+                </div>
+
+                <span id="discountPrice"></span>
 
                 <button>Proceed to Buy</button>
             </div>
         </div>
     </section>
 
-    <div class="icon-cart">
-        <span id="cartCount">0</span>
-    </div>
-    <div class="cart">
-        <h2>Your Cart <span id="totalItemsCount">0</span></h2>
-        <div id="cartItems"></div>
-        <img src="" alt="">
-        <button onclick="clearCart()">Clear Cart</button>
-        <span>Total Price: $<span id="totalPrice"></span></span>
+    <div style="text-align: end;"></div>
 
 
-    </div>
-
-    <div class="cart_product_items">
-        <div>
-            <div class="product_name">
-                <h1>
-                    ${cartItem.name}
-                </h1>
-            </div>
-            <div class="product_size">
-                <p>
-                    ${cartItem.size ? "Size: " + cartItem.size + " - " : ""} </p>
-            </div>
-            <div class="product_quantity">
-                <button onclick="decreaseCartItem('${cartItem.id}', '${
-               cartItem.size
-          }')">-</button>
-                ${cartItem.count}
-                <button onclick="increaseCartItem('${cartItem.id}', '${
-           cartItem.size
-            }')">+</button>
-            </div>
-        </div>
-
-
-        <div class="product_total">
-            ${cartItem.totalPrice}
-        </div>
-    </div>
 
 
     <script src="cart.js"></script>

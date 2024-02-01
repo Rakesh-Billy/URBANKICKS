@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered Products</title>
+</head>
+<body>
+
+<h1>Filtered Products</h1>
+
+<input type="text" id="searchInput" placeholder="Search by product name or ID">
+<button id="searchButton">Search</button>
+
+<ul id="results"></ul>
+
+<script type="module">
+    async function fetchProducts() {
+        const response = await fetch('products.json');
+        const products = await response.json();
+        return products;
+    }
+
+    function displayProducts(matchingProducts) {
+        const resultsContainer = document.getElementById("results");
+        resultsContainer.innerHTML = "";
+
+        if (matchingProducts.length === 0) {
+            const noResultsMessage = document.createElement("p");
+            noResultsMessage.textContent = "No matching products found.";
+            resultsContainer.appendChild(noResultsMessage);
+        } else {
+            matchingProducts.forEach(product => {
+                const listItem = document.createElement("li");
+                listItem.textContent = `ID: ${product.id}, Brand: ${product.brand}, Name: ${product.name}, Type: ${product.type}, Price: ${product.price}, Image: ${product.image}`;
+                resultsContainer.appendChild(listItem);
+            });
+        }
+    }
+
+    async function searchProducts(searchInput) {
+        const products = await fetchProducts();
+        console.log("All Products:", products);
+
+        const matchingProducts = products.filter(product =>
+            product.name.toLowerCase().includes(searchInput) ||
+            product.brand.toLowerCase().includes(searchInput) ||
+            product.type.toLowerCase().includes(searchInput) || // Include the new field 'type'
+            product.id.toString().includes(searchInput)
+        );
+
+        console.log("Matching Products:", matchingProducts);
+
+        displayProducts(matchingProducts);
+    }
+
+    // Assign the searchProducts function to the button click event
+    document.getElementById("searchButton").addEventListener("click", function () {
+        const searchInput = document.getElementById("searchInput").value.toLowerCase();
+        if (searchInput.trim() === "") {
+            alert("Please enter data in the input box.");
+        } else {
+            console.log("Search Input:", searchInput);
+            searchProducts(searchInput);
+        }
+    });
+
+    // Call searchProducts when the page loads
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialSearchInput = (urlParams.get('search') || '').toLowerCase();
+    console.log("Initial Search Input:", initialSearchInput);
+    document.getElementById("searchInput").value = initialSearchInput;
+    searchProducts(initialSearchInput);
+
+    // Enable searching when pressing Enter in the search input
+    document.getElementById("searchInput").addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+            const searchInput = document.getElementById("searchInput").value.toLowerCase();
+            if (searchInput.trim() === "") {
+                alert("Please enter data in the input box.");
+            } else {
+                console.log("Search Input (Enter):", searchInput);
+                searchProducts(searchInput);
+            }
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

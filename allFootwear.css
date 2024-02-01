@@ -5,25 +5,58 @@
 body {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
-  text-decoration: none
+  text-decoration: none;
 }
 
-svg{
+svg {
   width: 30px;
 }
-header{
+header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  margin: 0px 40px;
+  justify-content: center;
+  padding-top: 50px;
+  justify-content: space-evenly;
+}
+header input {
+  outline: none;
+  overflow: hidden;
+  width: 50%;
+  padding: 15px 20px;
+  background-color: none;
+  border-radius: 50px;
+  font-size: 1em;
 }
 
-.icon-cart{
+header button {
+  outline: none;
+  overflow: hidden;
+  width: 20%;
+  padding: 15px 20px;
+  background-color: none;
+  border: none;
+  background-color: rgb(254, 161, 61);
+  border-radius: 50px;
+  font-size: 1em;
+}
+
+header button:hover {
+  outline: none;
+  overflow: hidden;
+  width: 20%;
+  padding: 15px 20px;
+  background-color: none;
+  border: none;
+  background-color: rgb(254, 161, 61);
+  border-radius: 50px;
+  font-size: 20px;
+  box-shadow: 1px 1px 5px black;
+}
+
+.icon-cart {
   position: relative;
   /* margin-right: 40px; */
 }
-.icon-cart span{
+.icon-cart span {
   position: absolute;
   background-color: red;
   width: 30px;
@@ -37,18 +70,18 @@ header{
   right: -20px;
 }
 
-.all_ftwr{
-    margin: 30px 20px;
+.all_ftwr {
+  margin: 30px 20px;
 }
 
-.all_ftwr h1{
-    font-size: 50px;
-    font-weight: 600;
+.all_ftwr h1 {
+  font-size: 50px;
+  font-weight: 600;
 }
 
-.all_ftwr h2{
-    font-size: 30px;
-    font-weight: 600;
+.all_ftwr h2 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 .all_ftwr .card {
@@ -91,7 +124,6 @@ header{
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
-
 }
 
 .all_ftwr h3 {
@@ -100,11 +132,11 @@ header{
   font-weight: 600;
 }
 
-.card-title{
+.card-title {
   text-decoration: none;
 }
 
-a{
+a {
   color: unset;
   text-decoration: none;
 }

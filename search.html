@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Search</title>
+</head>
+<body>
+
+<h1>Product Search</h1>
+
+<input type="text" id="searchInput" placeholder="Search by product name, ID, or type">
+<button id="searchButton">Search</button>
+
+<script type="module">
+    async function fetchProducts() {
+        const response = await fetch('products.json');
+        const products = await response.json();
+        return products;
+    }
+
+    async function searchProducts() {
+        const searchInput = document.getElementById("searchInput").value.toLowerCase();
+        const products = await fetchProducts();
+
+        // Filter the products based on the search input
+        const matchingProducts = products.filter(product =>
+            product.name.toLowerCase().includes(searchInput) ||
+            product.id.toString().includes(searchInput) ||
+            product.type.toLowerCase().includes(searchInput)  // Include the new field 'type'
+        );
+
+        // Redirect to the results.html page with the filtered products and search input as query parameters
+        window.location.href = `searchPage.html?search=${encodeURIComponent(searchInput)}&products=${encodeURIComponent(JSON.stringify(matchingProducts))}`;
+    }
+
+    // Assign the searchProducts function to the button click event
+    document.getElementById("searchButton").addEventListener("click", searchProducts);
+
+    // Enable searching when pressing Enter in the search input
+    document.getElementById("searchInput").addEventListener("keypress", function (e) {
+        if (e.key === "Enter") {
+            searchProducts();
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -44,8 +44,8 @@
 
 
                             <div class="add_crt_btn">
-                                <button class="crt_btn" id="addToCartBtn" onclick="addToCart(event)">Add to
-                                    Cart</button>
+                                <button class="crt_btn" id="addToCartBtn">Add to Cart</button>
+
                             </div>
                             <a href="cart.html">cart</a>
 
@@ -87,33 +87,37 @@
                 </div>
             </div>
         </section>
-
-        <section>
-            <div class="icon-cart">
-                <span id="cartCount">0</span>
-            </div>
-            <div class="cart">
-                <h2>Your Cart <span id="totalItemsCount">0</span></h2>
-                <ul id="cartItems"></ul>
-                <button onclick="clearCart()">Clear Cart</button>
-                <span>Total Price: $<span id="totalPrice"></span></span>
-
-
-            </div>
-        </section>
-
-        <section class="additional">
-            <div class="container">
-                <h1>You may also like </h1>
-                <div class="row other_products ">
-
-                </div>
-            </div>
-        </section>
-
     </div>
 
-<script src="cart.js"></script>
+    <!-- <section>
+        <div class="icon-cart">
+            <span id="cartCount">0</span>
+        </div>
+        <div class="cart">
+            <h2>Your Cart <span id="totalItemsCount">0</span></h2>
+            <ul id="cartItems"></ul>
+            <button onclick="clearCart()">Clear Cart</button>
+            <span>Total Price: ₹<span id="totalPrice"></span></span>
+        </div>
+    </section>
+
+    <section>
+        <label for="couponCode">Coupon Code:</label>
+        <input type="text" id="couponCode" placeholder="Enter coupon code">
+        <button onclick="applyCoupon()">Apply Coupon</button>
+        <span>Discounted Price: ₹<span id="discountPrice"></span></span>
+    </section> -->
+
+    <section class="additional">
+        <div class="container">
+            <h1>You may also like </h1>
+            <div class="row other_products ">
+
+            </div>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
 
 
 </body>

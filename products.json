@@ -2,6 +2,7 @@
     {
         "id": 1,
         "brand": "Nike",
+        "type" : "shoes / sneakers  ",
         "name": "AIR JORDAN 1 LOW SE 'WHITE/DUNE RED-LOBSTER-SAIL'",
         "price": "₹ 10,295.00",
         "image": "images/sneakers/AIR JORDAN 1 LOW SE.webp"
@@ -10,6 +11,7 @@
     {
         "id": 2,
         "brand": "Adidas",
+        "type" : "shoe sneakers",
         "name": "FORUM LOW 'CORE BLACK/GREY/SILVER'",
         "price": "₹ 7,990.00",
         "image": "images/sneakers/FORUM LOW.webp"
@@ -18,6 +20,7 @@
     {
         "id": 3,
         "brand": "Puma",
+        "type" : "shoe sneakers",
         "name": "SLIPSTREAM LO XTREME 'WHITE/YELLOW/BLUE'",
         "price": "₹ 8,399.00",
         "image": "images/sneakers/SLIPSTREAM LO XTREME.webp"
@@ -26,6 +29,7 @@
     {
         "id": 4,
         "brand": "Puma",
+        "type" : "shoe sneakers",
         "name": "X PLEASURES SUEDE 'PUMA BLACK-FROSTED IVORY'",
         "price": "₹ 10,999.00",
         "image": "images/sneakers/X PLEASURES SUEDE.webp"
@@ -34,6 +38,7 @@
     {
         "id": 5,
         "brand": "Nike",
+        "type" : "shoe sneakers",
         "name": "AIR JORDAN 1 RETRO HIGH OG 'BLACK/WHITE-WHITE'",
         "price": "₹ 16,995.00",
         "image": "images/sneakers/AIR JORDAN 1 RETRO HIGH OG.webp"
@@ -42,6 +47,7 @@
     {
         "id": 6,
         "brand": "New Balance",
+        "type" : "shoe / sneaker / shoes",
         "name": "992 'GREY/BLUE-RED'",
         "price": "₹ 24,499.00",
         "image": "images/sneakers/992.webp"
@@ -50,6 +56,7 @@
     {
         "id": 7,
         "brand": "Adidas",
+        "type" : "shoe sneakers",
         "name": "BYW SELECT 'ECRU TINT/BLUE'",
         "price": "₹ 9,799.00",
         "image": "images/sneakers/BYW SELECT.webp"
@@ -58,6 +65,7 @@
     {
         "id": 8,
         "brand": "Nike",
+        "type" : "shoe sneakers",
         "name": "DUNK LOW RETRO 'WHITE/COSMIC CLAY-DUSTY CACTUS'",
         "price": "₹ 8,695.00",
         "image": "images/sneakers/DUNK LOW RETRO.webp"
@@ -66,6 +74,7 @@
     {
         "id": 9,
         "brand": "Puma",
+        "type" : "shoe sneakers",
         "name": "BLKTOP RIDER PRM 'ASH GREY/MALACHITE'",
         "price": "₹ 6,299.00",
         "image": "images/sneakers/BLKTOP RIDER PRM.webp"
@@ -74,6 +83,7 @@
     {
         "id": 10,
         "brand": "New Balance",
+        "type" : "shoe / sneaker / shoes",
         "name": "57/40 'VINTAGE ROSE'",
         "price": "₹ 8,399.00",
         "image": "images/sneakers/57-40.webp"
@@ -82,6 +92,7 @@
     {
         "id": 11,
         "brand": "Adidas",
+        "type" : "shoe sneakers",
         "name": "NMD_R1 V3 'HALO SILVER/OFF WHITE'",
         "price": "₹ 11,199.00",
         "image": "images/sneakers/NMD_R1 V3.webp"
@@ -90,6 +101,7 @@
     {
         "id": 12,
         "brand": "New Balance",
+        "type" : "shoe / sneaker / shoes",
         "name": "2002R 'LIGHT CREAM PURPLE'",
         "price": "₹ 15,399.00",
         "image": "images/sneakers/2002R.webp"
@@ -98,6 +110,7 @@
     {
         "id": 13,
         "brand": "Sneaker Lab",
+        "type" : "shoe sneakers",
         "name": "Basic Kit Clean-Care-Protect",
         "price": "₹ 1,149.00",
         "image": "images/basic_kit.webp"
@@ -106,6 +119,7 @@
     {
         "id": 14,
         "brand": "Sneaker Lab",
+        "type" : "shoe cleaner / accessories",
         "name": "Premium Kit Clean-Care-Protect",
         "price": "₹ 7,990.00",
         "image": "images/Premium-kit.webp"
@@ -114,6 +128,7 @@
     {
         "id": 15,
         "brand": "Sneaker Lab",
+        "type" : "shoe cleaner / accessories",
         "name": "Sneaker Protector",
         "price": "₹ 769.00",
         "image": "images/snaker_liquid.webp"
@@ -122,6 +137,7 @@
     {
         "id": 16,
         "brand": "Sneaker Lab",
+        "type" : "shoe cleaner / accessories",
         "name": "Leather Wipes",
         "price": "₹ 1,149.00",
         "image": "images/Leather_wipes.jpg"
@@ -130,9 +146,11 @@
     {
         "id": 17,
         "brand": "Sneaker Lab",
+        "type" : "shoe cleaner / accessories",
         "name": "Sneaker Wipes",
         "price": "₹ 1,149.00",
         "image": "images/sneaker_wipes.webp"
+
 
     },
     {
@@ -140,7 +158,9 @@
         "brand": "Adidas",
         "name": "TREFOIL ANKLE SOCKS 3 PAIRS",
         "price": "₹ 1,199.00",
-        "image": "images/socks-3.webp"
+        "image": "images/socks-3.webp",
+        "type": "socks / accessories"
+
 
     },
     {
@@ -148,7 +168,9 @@
         "brand": "Adidas",
         "name": "PREMIUM CREW SOCKS 2 PAIRS",
         "price": "₹ 1,259.00",
-        "image": "images/socks-1.webp"
+        "image": "images/socks-1.webp",
+        "type": "socks / accessories"
+
 
     },
     {
@@ -156,7 +178,9 @@
         "brand": "Retrosuperfuture",
         "name": "BORN X RAISED LIRA 'BLACK'",
         "price": "₹ 18,999.00",
-        "image": "images/sunglasses -1.webp"
+        "image": "images/sunglasses -1.webp",
+        "type": "sunglasses / accessories"
+
 
     },
     {
@@ -164,7 +188,9 @@
         "brand": "Retrosuperfuture",
         "name": "BENZ MILKY WAY",
         "price": "₹ 15,999.00",
-        "image": "images/sunglasses -3.webp"
+        "image": "images/sunglasses -3.webp",
+        "type": "sunglasses / accessories"
+        
 
     }
 ]

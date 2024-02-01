@@ -61,24 +61,10 @@ function selectSizeAndAddToCart(event) {
   }
 }
 
-function addToCart(productId, selectedSize = null) {
+function addToCart(productId, selectedSize ) {
   let selectedProduct = products.find((product) => product.id == productId);
 
-  // Debugging: Log values to console
-  console.log("selectedProduct:", selectedProduct);
-  console.log(
-    "selectedProduct.price:",
-    selectedProduct ? selectedProduct.price : null
-  );
 
-  // Check if selectedProduct and selectedProduct.price are valid
-  if (!selectedProduct || typeof selectedProduct.price !== "string") {
-    console.error("Invalid product or price format");
-    console.error("productId:", productId);
-    console.error("selectedSize:", selectedSize);
-    console.error("selectedProduct:", selectedProduct);
-    return;
-  }
 
   // Convert the price to a numeric value
   let productPrice = parseFloat(
@@ -134,17 +120,30 @@ function addToCart(productId, selectedSize = null) {
 
 function createCartItemElement(cartItem) {
   let li = document.createElement("div");
+  li.classList.add("cart_product_items");
+
   li.innerHTML = `
-    <div class="cart_product_items">
+  <div class="img_cntr">
+    <img src="${cartItem.image}">
+    
+    </div>
+    
     <div>
+    
         <div class="product_name">
 <h1>
+
 ${cartItem.name}
 </h1>
+<p>
+${cartItem.brand}
+</p>
+
         </div>
         <div class="product_size">
     <p>
-    ${cartItem.size ? "Size: " + cartItem.size + " - " : ""}    </p>
+    ${cartItem.size ? "Size: " + cartItem.size + "" : ""}   
+     </p>
         </div>
         <div class="product_quantity">
         <button onclick="decreaseCartItem('${cartItem.id}', '${
@@ -158,10 +157,10 @@ ${cartItem.name}
     </div>
 
 
-    <div class="product_total">
-    ${cartItem.totalPrice}
+    <div class="product_total" >
+    ₹${cartItem.totalPrice}
     </div>
-</div>
+
 
     `;
 
@@ -181,16 +180,16 @@ ${cartItem.name}
 }
 
 function decreaseCartItem(productId, size) {
-  updateCartItemQuantity(productId, size, -1);
+  updateCartItemQuantity(productId, size, -0.5);
 }
 
 function increaseCartItem(productId, size) {
-  updateCartItemQuantity(productId, size, 1);
+  updateCartItemQuantity(productId, size, 0.5);
 }
 
 function updateCartItemQuantity(productId, size, quantityChange) {
   let cart = getCartFromLocalStorage();
-  let cartItem = cart.find((item) => item.id == productId && item.size == size);
+  let cartItem = cart.find((item) => item.id == productId);
 
   if (cartItem) {
     // Update the count with the change
@@ -463,3 +462,27 @@ function shuffleArray(array) {
 }
 
 // ****------------------------PRODUCT JS END------------------------****
+
+function applyCoupon() {
+    let couponCodeInput = document.getElementById("couponCode");
+    let discountMessage = document.querySelector(".dscnt_msg");
+    let couponCode = couponCodeInput.value.trim().toUpperCase();
+
+    if (couponCode === "URBAN20") {
+        // Get the total price and apply a 20% discount
+        let totalElement = document.getElementById("totalPrice");
+        let total = parseFloat(totalElement.innerText);
+        let discountedPrice = total * 0.8; // 20% discoun
+        let discountElement = document.getElementById("discountPrice");
+
+        // Display the discounted price
+        discountElement.innerHTML =`<p>Applied 20% Discount</p>
+        <p>Discounted Price: ₹ ${discountedPrice.toFixed(2)}</p>` ;
+
+        // Provide feedback to the user
+        alert("Coupon applied! 20% discount has been applied to the total price.");
+    } else {
+        // Provide feedback for invalid coupon code
+        alert("Invalid coupon code. Please enter a valid code.");
+    }
+}
