@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 * {
   margin: 0;
 }
 body {
   scroll-behavior: smooth;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: 'Quicksand', sans-serif;
 }
 
 a{
@@ -14,13 +16,20 @@ a{
 
 /* Navbar */
 
+.offer{
+  background-color: #f1e2d9;
+  padding: 0px;
+  color: #000000;
+
+}
+
 .navbar input {
   border-radius: 50px;
   border: 1px solid black;
 }
 
 .navbar img {
-  margin-left: 18px;
+
 }
 
 .navbar button {
@@ -40,13 +49,15 @@ a{
 }
 
 .navbar-custom {
-  background-color: #f1f1f1;
-  border-bottom: 1px solid black;
+  background-color: white;
+  padding: 20px;
 }
 
 .navbar-custom a {
-  color: rgb(24, 23, 23);
-  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-weight: 550;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .navbar-custom a:hover {
@@ -60,9 +71,67 @@ img {
   width: 100%;
 }
 
+
+.hero{
+  height: 100vh;
+  background-image: url(images/bg2.png);
+  background-size: cover;
+  /* background-position: center; */
+}
+
 /* __________________________________ */
 
 /* Banner */
+
+.banner_main .container{
+}
+
+
+.banner_main .details{
+background-color: black;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.banner_main h1{
+  font-size: 2rem;
+}
+
+.banner_main h2{
+  font-size: 1.8rem;
+}
+
+.banner_main .details button{
+  background-color: white;
+  padding: 8px 20px;
+  margin-top: 10px;
+  border: none;
+}
+.banner_main .details button:hover{
+  background-color: white;
+  padding: 8px 20px;
+  margin-top: 10px;
+  border: none;
+box-shadow: 1px 1px 5px white;
+  transform: scale(1.05);
+}
+
+.banner_main .pre_btn span{
+  background-color: black;
+  /* margin-right: 130px; */
+  padding: 20px 20px;
+}
+
+.banner_main .nxt_btn span{
+  background-color: rgb(203, 21, 21);
+  /* margin-right: 130px; */
+  padding: 30px;
+  
+  color: black;
+}
 
 .banner {
   margin-top: 40px;
@@ -178,7 +247,7 @@ img {
   text-shadow: 1px 2px #000000;
 }
 
-/* Deals */
+/****---------- DEALS ----------****/
 
 .deals {
   margin-left: 30px;
@@ -234,74 +303,106 @@ img {
   justify-content: end;
 }
 
-/* card_carousel */
+/****---------- FVORITES ----------****/
 
-.card_carousel {
-  display: flex;
-  justify-content: center;
-  margin-left: 20px;
-  margin-right: 20px;
+.urbn_favs{
+  /* padding: 20px; */
+  margin: 100px 20px 20px 20px;
+
 }
 
-.card_carousel .container {
-  width: 85%;
+.urbn_favs h1{
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.card_carousel .card {
+#view_all{
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.urbn_favs .card {
   border: none;
 }
 
-.card_carousel .card:hover {
-  /* transform: scale(1.02); */
-  box-shadow: 1px 1px 5px #28272785;
-}
-
-.card_carousel .card-body {
+.urbn_favs .card-body {
   background-color: none;
 }
-
-.card_carousel #arrows {
-  display: flex;
-  justify-content: end;
-}
-
-.card_carousel .card-body {
+.urbn_favs .card-body {
   background-color: white;
   padding: 0px;
   padding-top: 10px;
 }
 
-.card_carousel .card-title {
+.urbn_favs .card-title {
   font-size: 20px;
   font-weight: 700;
 }
 
-.card_carousel .card-text {
+.urbn_favs .card-text {
   font-size: 15px;
   font-weight: 600;
 }
 
-.card_carousel .price {
+.urbn_favs .price {
   font-size: 15px;
   font-weight: 600;
 }
 
-.card_carousel h3 {
+.urbn_favs h3 {
   color: black;
   font-size: 40px;
   font-weight: 600;
 }
 
-/* Brands */
+/* ***---------- COLLECTIONS ----------*** */
+
+.boxes {
+  margin: 70px 20px 20px 20px;
+}
+
+.boxes h1{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+
+#shoe_box {
+  position: relative;
+  margin-top: 24px;
+  transition: transform 0.3s ease; 
+}
+
+#shoe_box:hover {
+  position: relative;
+  margin-top: 24px;
+transform: scale3d(1.01, 1.01, 1);
+
+}
+
+#shoe_name {
+  position: absolute;
+  bottom: 0px;
+  left: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+/* ***---------- BRANDS ----------*** */
 
 .brands {
-  margin-top: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
+margin: 100px 20px 20px 20px;
 }
 
 .brands h1 {
-  font-weight: 600;
+  /* font-weight: 600; */
+  color: rgb(0, 0, 0);
+  text-align: center;margin-bottom: 30px;
+
 }
 
 .brands button {
@@ -320,10 +421,11 @@ img {
 #img-1 {
   position: relative;
   margin-top: 20px;
+  transition: transform 0.3s ease; 
 }
 
 #img-1:hover {
-  transform: scale(1.05);
+  transform: scale3d(1.01, 1.01, 1);
 }
 
 #brand_1 {
@@ -333,6 +435,79 @@ img {
   left: 50%;
   bottom: 7%;
 }
+
+/* ***----------PRODUCTS AD ----------*** */
+
+.shoe_ad_1{
+  margin: 100px 0px 30px 30px;
+
+}
+.nike_img{
+  position: relative;
+  width: 70vw;
+}
+
+.img_data{
+  background-color: #f1e2d9;
+  color: rgb(0, 0, 0);
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  top: 50%;
+  right: -50%;
+}
+
+.glasses_img{
+  margin-top: 70px;
+  
+
+  position: relative;
+  width: 70vw;
+}
+
+.img_2_data{
+  background-color: black;
+  color: white;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+  .shoe_ad_1 h1{
+    font-size: 2rem;
+  }
+  
+  .shoe_ad_1 h2{
+    font-size: 1.8rem;
+  }
+  
+  .shoe_ad_1 button{
+    background-color: white;
+    padding: 8px 20px;
+    margin-top: 10px;
+    border: none;
+    transition: transform 0.3s ease ;
+  }
+  .shoe_ad_1 button:hover{
+    background-color: white;
+    padding: 8px 20px;
+    margin-top: 10px;
+    border: none;
+  box-shadow: 1px 1px 5px white;
+    transform: scale(1.05);
+  }
+
 
 /* Shoe_care_products */
 
@@ -383,25 +558,7 @@ img {
 
 /* Shoes and Accessories */
 
-.boxes {
-  margin-left: 20px;
-  margin-right: 20px;
-}
 
-#shoe_box {
-  position: relative;
-  margin-top: 20px;
-}
-
-#shoe_name {
-  position: absolute;
-  bottom: 0px;
-  left: 30px;
-  color: white;
-  font-size: 30px;
-  font-weight: 700;
-  letter-spacing: 5px;
-}
 
 /* Review */
 

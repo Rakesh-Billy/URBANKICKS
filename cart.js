@@ -339,6 +339,7 @@ function showDetail() {
 
   // Show details for the selected product
   detail.querySelector(".image img").src = thisProduct.image;
+  detail.querySelector(".image_2 img").src = thisProduct.image_2;
   detail.querySelector(".brand").innerText = thisProduct.brand;
   detail.querySelector(".Shoe_name").innerText = thisProduct.name;
   detail.querySelector(".shoe_price").innerText = thisProduct.price;

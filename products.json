@@ -5,7 +5,9 @@
         "type" : "shoes / sneakers  ",
         "name": "AIR JORDAN 1 LOW SE 'WHITE/DUNE RED-LOBSTER-SAIL'",
         "price": "₹ 10,295.00",
-        "image": "images/sneakers/AIR JORDAN 1 LOW SE.webp"
+        "image": "images/sneakers/AIR JORDAN 1 LOW SE.webp",
+        "image_2": "images/sneakers/AIR JORDAN 1 LOW SE - 2.webp"
+
 
     },
     {
@@ -14,7 +16,9 @@
         "type" : "shoe sneakers",
         "name": "FORUM LOW 'CORE BLACK/GREY/SILVER'",
         "price": "₹ 7,990.00",
-        "image": "images/sneakers/FORUM LOW.webp"
+        "image": "images/sneakers/FORUM LOW.webp",
+        "image_2": "images/sneakers/FORUM LOW-2.webp"
+
 
     },
     {
@@ -23,7 +27,9 @@
         "type" : "shoe sneakers",
         "name": "SLIPSTREAM LO XTREME 'WHITE/YELLOW/BLUE'",
         "price": "₹ 8,399.00",
-        "image": "images/sneakers/SLIPSTREAM LO XTREME.webp"
+        "image": "images/sneakers/SLIPSTREAM LO XTREME.webp",
+        "image_2": "images/sneakers/SLIPSTREAM LO XTREME -2.webp"
+
 
     },
     {
@@ -32,7 +38,9 @@
         "type" : "shoe sneakers",
         "name": "X PLEASURES SUEDE 'PUMA BLACK-FROSTED IVORY'",
         "price": "₹ 10,999.00",
-        "image": "images/sneakers/X PLEASURES SUEDE.webp"
+        "image": "images/sneakers/X PLEASURES SUEDE.webp",
+        "image_2": "images/sneakers/X PLEASURES SUEDE -2.webp"
+
 
     },
     {
@@ -41,7 +49,9 @@
         "type" : "shoe sneakers",
         "name": "AIR JORDAN 1 RETRO HIGH OG 'BLACK/WHITE-WHITE'",
         "price": "₹ 16,995.00",
-        "image": "images/sneakers/AIR JORDAN 1 RETRO HIGH OG.webp"
+        "image": "images/sneakers/AIR JORDAN 1 RETRO HIGH OG.webp",
+        "image_2": "images/sneakers/AIR JORDAN 1 RETRO HIGH OG-2.webp"
+
 
     },
     {
@@ -50,7 +60,9 @@
         "type" : "shoe / sneaker / shoes",
         "name": "992 'GREY/BLUE-RED'",
         "price": "₹ 24,499.00",
-        "image": "images/sneakers/992.webp"
+        "image": "images/sneakers/992.webp",
+        "image_2": "images/sneakers/992 -2.webp"
+
 
     },
     {
@@ -59,7 +71,9 @@
         "type" : "shoe sneakers",
         "name": "BYW SELECT 'ECRU TINT/BLUE'",
         "price": "₹ 9,799.00",
-        "image": "images/sneakers/BYW SELECT.webp"
+        "image": "images/sneakers/BYW SELECT.webp",
+        "image_2": "images/sneakers/BYW SELECT -2.webp"
+
 
     },
     {
@@ -68,7 +82,9 @@
         "type" : "shoe sneakers",
         "name": "DUNK LOW RETRO 'WHITE/COSMIC CLAY-DUSTY CACTUS'",
         "price": "₹ 8,695.00",
-        "image": "images/sneakers/DUNK LOW RETRO.webp"
+        "image": "images/sneakers/DUNK LOW RETRO.webp",
+        "image_2": "images/sneakers/DUNK LOW RETRO -2.webp"
+
 
     },
     {
@@ -77,7 +93,9 @@
         "type" : "shoe sneakers",
         "name": "BLKTOP RIDER PRM 'ASH GREY/MALACHITE'",
         "price": "₹ 6,299.00",
-        "image": "images/sneakers/BLKTOP RIDER PRM.webp"
+        "image": "images/sneakers/BLKTOP RIDER PRM.webp",
+        "image_2": "images/sneakers/BLKTOP RIDER PRM -2.webp"
+
 
     },
     {
@@ -86,7 +104,9 @@
         "type" : "shoe / sneaker / shoes",
         "name": "57/40 'VINTAGE ROSE'",
         "price": "₹ 8,399.00",
-        "image": "images/sneakers/57-40.webp"
+        "image": "images/sneakers/57-40.webp",
+        "image_2": "images/sneakers/57-40 2.webp"
+
 
     },
     {
@@ -95,7 +115,10 @@
         "type" : "shoe sneakers",
         "name": "NMD_R1 V3 'HALO SILVER/OFF WHITE'",
         "price": "₹ 11,199.00",
-        "image": "images/sneakers/NMD_R1 V3.webp"
+        "image": "images/sneakers/NMD_R1 V3.webp",
+        "image_2": "images/sneakers/NMD_R1 V3 -2.webp"
+
+
 
     },
     {
@@ -104,7 +127,9 @@
         "type" : "shoe / sneaker / shoes",
         "name": "2002R 'LIGHT CREAM PURPLE'",
         "price": "₹ 15,399.00",
-        "image": "images/sneakers/2002R.webp"
+        "image": "images/sneakers/2002R.webp",
+        "image_2": "images/sneakers/2002R -2.webp"
+
 
     },
     {
@@ -113,7 +138,10 @@
         "type" : "shoe sneakers",
         "name": "Basic Kit Clean-Care-Protect",
         "price": "₹ 1,149.00",
-        "image": "images/basic_kit.webp"
+        "image": "images/basic_kit.webp",
+        "image_2": "images/basic_kit-2.webp"
+
+
 
     },
     {
@@ -122,7 +150,9 @@
         "type" : "shoe cleaner / accessories",
         "name": "Premium Kit Clean-Care-Protect",
         "price": "₹ 7,990.00",
-        "image": "images/Premium-kit.webp"
+        "image": "images/Premium-kit.webp",
+        "image_2": "images/Premium-kit-2.webp"
+
 
     },
     {
@@ -131,7 +161,9 @@
         "type" : "shoe cleaner / accessories",
         "name": "Sneaker Protector",
         "price": "₹ 769.00",
-        "image": "images/snaker_liquid.webp"
+        "image": "images/snaker_liquid.webp",
+        "image_2": "images/snaker_liquid-2.webp"
+
 
     },
     {
@@ -140,7 +172,9 @@
         "type" : "shoe cleaner / accessories",
         "name": "Leather Wipes",
         "price": "₹ 1,149.00",
-        "image": "images/Leather_wipes.jpg"
+        "image": "images/Leather_wipes.jpg",
+        "image_2": "images/Leather_wipes-2.jpg"
+
 
     },
     {
@@ -149,7 +183,9 @@
         "type" : "shoe cleaner / accessories",
         "name": "Sneaker Wipes",
         "price": "₹ 1,149.00",
-        "image": "images/sneaker_wipes.webp"
+        "image": "images/sneaker_wipes.webp",
+        "image_2": "images/sneaker_wipes-2.webp"
+
 
 
     },
@@ -159,6 +195,7 @@
         "name": "TREFOIL ANKLE SOCKS 3 PAIRS",
         "price": "₹ 1,199.00",
         "image": "images/socks-3.webp",
+        "image_2": "images/socks-3.webp",
         "type": "socks / accessories"
 
 
@@ -169,6 +206,8 @@
         "name": "PREMIUM CREW SOCKS 2 PAIRS",
         "price": "₹ 1,259.00",
         "image": "images/socks-1.webp",
+        "image_2": "images/socks-2.webp",
+
         "type": "socks / accessories"
 
 
@@ -179,6 +218,8 @@
         "name": "BORN X RAISED LIRA 'BLACK'",
         "price": "₹ 18,999.00",
         "image": "images/sunglasses -1.webp",
+        "image_2": "images/sunglasses -2.webp",
+
         "type": "sunglasses / accessories"
 
 
@@ -189,6 +230,7 @@
         "name": "BENZ MILKY WAY",
         "price": "₹ 15,999.00",
         "image": "images/sunglasses -3.webp",
+        "image_2": "images/sunglasses -4.png",
         "type": "sunglasses / accessories"
         
 

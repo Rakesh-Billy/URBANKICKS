@@ -49,3 +49,40 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+let products = null;
+
+// get data from the JSON file
+fetch('products.json')
+    .then(response => response.json())
+    .then(data => {
+        products = data;
+        filterAndAddDataToHTML();
+        console.log(products);
+    });
+
+function filterAndAddDataToHTML() {
+    // remove default data from HTML
+    let listProductHTML = document.querySelector('.favorite');
+    
+    // filter products based on the specified product IDs (1, 3, 7)
+    let filteredProducts = products.filter(product => [8, 2, 3, 7].includes(product.id));
+
+    // add new data
+    if (filteredProducts.length > 0) {
+        filteredProducts.forEach(product => {
+            let newProduct = document.createElement('a');
+            newProduct.href = '/product.html?id=' + product.id;
+            newProduct.classList.add('col-md-3', 'g-10');
+            newProduct.innerHTML =
+                ` <div class="card">
+                    <img class="img-fluid" alt="100%x280" src="${product.image}">
+                    <div class="card-body">
+                      <p id="p_brand" class="card-text">${product.brand}</p>
+                      <h5 id="p_name" class="card-title">${product.name}</h5>
+                      <p id="p_price" >${product.price}</p>
+                    </div>
+                  </div>`;
+            listProductHTML.appendChild(newProduct);
+        });
+    }
+}
